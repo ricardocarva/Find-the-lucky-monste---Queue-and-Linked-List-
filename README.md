@@ -2,17 +2,8 @@
 For this assignment you have to write a c program that will use the circular singly linked list and queue data structure 
 
 Problem: Find the lucky monster  A Monster Kingdom has trapped G (G ≤ 10) groups of criminal monsters. They want to execute 
-them. They found out a strategy so that the criminal monsters will kill each other and at the end 
-one  monster  will  be  alive  and  he  will  be  released.  The  kingdom  has  10  execution  grounds  one 
-after  another.  Each  ground  has  a  ground  number.  The  grounds  are  numbered  with  a  sequence  
-number  starting  from  1  to  10.  As  part  of  the  strategy,  each  group  is  placed  to  an  execution  
-ground. The groups are numbered based on the assigned execution ground number. Note that G 
-is assumed to be less than or equal to 10 and as a result some grounds could be empty.  
-Each group gi has ni (ni ≥2) number of monsters. As part of the process, they labeled each monster 
-of  a  group  with  a  sequence  number  starting  from  1  and  ending  at  ni.  All  the  ni  number  of  
-monsters  of  group  gi  are  standing  in  a  circle  and  waiting  to  be  executed.  However,  due  to  
-distraction,  it  was  found  out  that  all  monsters  in  all  the  groups  were  standing  in  reverse  order  
-instead of proper order like the following picture (let us say monsters count of a group is 6): 
+them. They found out a strategy so that the criminal monsters will kill each other and at the end one  monster  will  be  alive  and  he  will  be  released.  The  kingdom  has  10  execution  grounds  one after  another.  Each  ground  has  a  ground  number.  The  grounds  are  numbered  with  a  sequence number  starting  from  1  to  10.  As  part  of  the  strategy,  each  group  is  placed  to  an  execution ground. The groups are numbered based on the assigned execution ground number. Note that G is assumed to be less than or equal to 10 and as a result some grounds could be empty.  
+Each group gi has ni (ni ≥2) number of monsters. As part of the process, they labeled each monster of  a  group  with  a  sequence  number  starting  from  1  and  ending  at  ni.  All  the  ni  number  of monsters  of  group  gi  are  standing  in  a  circle  and  waiting  to  be  executed.  However,  due  to distraction,  it  was  found  out  that  all  monsters  in  all  the  groups  were  standing  in  reverse  order instead of proper order like the following picture (let us say monsters count of a group is 6): 
  
  6-> 5-> 4 -> 3 -> 2-> 1 
  (one to six)
