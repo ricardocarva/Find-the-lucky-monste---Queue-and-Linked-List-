@@ -44,29 +44,32 @@ For each line of a group, the first integer indicates the ground number gi(gi �
 ### Output Specification: 
 The output has to be written to out.txt file as well as to the console with the exact same format specified by the sample output bellow. The output mainly contains the simulation steps and the last line will contain survived monster number with the group number. 
 
-Sample input from in.txt file: 
+Sample input from in.txt file:
+```
 4 
 4 7 3 3 
 1 10 3 2  
 7 9 2 4  
 3 8 2 1 
- 
-Sample output: 
+``` 
+Sample output:
+```
 Initial nonempty lists status 
 1 10 9 8 7 6 5 4 3 2 1 
 3 8 7 6 5 4 3 2 1 
 4 7 6 5 4 3 2 1 
 7 9 8 7 6 5 4 3 2 1 
- 
-After ordering nonempty lists status 
+
+After ordering nonempty lists status
 1 1 2 3 4 5 6 7 8 9 10 
 3 1 2 3 4 5 6 7 8 
 4 1 2 3 4 5 6 7 
 7 1 2 3 4 5 6 7 8 9 
+``` 
+### Phase1 execution 
  
-Phase1 execution 
- 
-Line# 1 
+```
+Line# 1
 Monster# 3 executed 
 Monster# 6 executed 
 Monster# 9 executed 
@@ -74,8 +77,8 @@ Monster# 2 executed
 Monster# 7 executed 
 Monster# 1 executed 
 Monster# 8 executed 
-Monster# 5 executed 
- 
+Monster# 5 executed
+
 Line# 3 
 Monster# 2 executed 
 Monster# 4 executed 
@@ -84,21 +87,21 @@ Monster# 8 executed
 Monster# 3 executed 
 Monster# 7 executed 
 Monster# 5 executed 
- 
+
 Line# 4 
 Monster# 3 executed 
 Monster# 6 executed 
 Monster# 2 executed 
-Monster# 7 executed 
- 
-Line# 7 
+Monster# 7 executed
+
+Line# 7
 Monster# 2 executed 
 Monster# 4 executed 
 Monster# 6 executed 
 Monster# 8 executed 
 Monster# 1 executed 
  
-Phase2 execution 
+Phase2 execution
 Executed Monster 4 from line 1 
 Executed Monster 10 from line 1 
 Executed Monster 3 from line 7 
@@ -108,7 +111,7 @@ Executed Monster 9 from line 7
 Executed Monster 1 from line 3 
 Executed Monster 1 from line 4 
 Executed Monster 4 from line 4 
- 
+``` 
 Monster 5 from line 4 will survive 
 Implementation Restrictions:  
 a) You must have to use linked list and queue in your implementation. 
@@ -128,6 +131,7 @@ n) You also have to use memory leak detector in your code like assignment 1.
  
  
 Your  code  must  compile  in  Mimir  platform.  If  it  does  not  compile  in  Mimir,  we  conclude  that your code does not compile even if it works in your computer. 
+
 #### Hints: 
 • Read the complete instruction first. It is always a good idea to plan it and do some paper work to understand the problem. 
 • Just  draw  the  scenario  for  a  single  group  of  monsters  first  to  understand  how  the execution process works. 
@@ -144,7 +148,6 @@ Steps to check your output AUTOMATICALLY in Mimir or repl.it or other command li
 
 Step1: Copy the sample output into sample_out.txt file and upload it to the mimir/replit (you can make your own sample_out.txt file) 
 Step2:  compile  and  run  your  code  using  typical  gcc  and  other  commands.  Your  code  should  produce out.txt file. 
-Step3:  Run the following command to compare your out.txt file with the sample output file  
-$diff -i out.txt sample_out.txt  
-The  command  will  not  produce  any  output  if  the  files  contain  exactly  same  data.  Otherwise,  it  will tell you the lines with mismatches. Incase if your code does not match, you can use the following command to see the result in side by side: 
-$diff -y out.txt sample_out.txt
+Step3:  Run the following command to compare your out.txt file with the sample output file ```$diff -i out.txt sample_out.txt```
+
+The  command  will  not  produce  any  output  if  the  files  contain  exactly  same  data.  Otherwise,  it  will tell you the lines with mismatches. Incase if your code does not match, you can use the following command to see the result in side by side: ```$diff -y out.txt sample_out.txt```
