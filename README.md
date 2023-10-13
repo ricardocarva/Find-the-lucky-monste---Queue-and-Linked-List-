@@ -114,21 +114,32 @@ Executed Monster 4 from line 4
 Monster 5 from line 4 will survive
 ```
 ### Implementation Restrictions:  
-a) You must have to use linked list and queue in your implementation. 
-b) You  must  have  to  use  circular  singly linked  list  for  your  solution  to  get  full  credit. You need  to  declare  appropriate  linked  list  node  structure  to  store  a monster  with  sequence number as the data value.  
-c) You have to use linked list implementation of queue when applicable. 
-d) Create a node structure for Monster that has a sequenceNumber and next pointer 
-e) Create  a  node  structure  for  a  queue  that  has  front  and  back  pointers  to  point  monsters. Also, a good idea would be storing nodeCount, k, and th within the queue structure.  
-f) You have to implement and use enqueue, dequeue, peek, isEmpty function for this given scenario. 
-g) In addition to the other functions of a queue like enqueue, dequeue, your code must have to implement the following functions and use them part of the solution: 
-h)  monster* createMonster(int sequence): It takes an integer, dynamically allocate a monster structure and returns a monster node  
-i)  void createReverseCircle(queue *q): It takes the reference of a queue, and creates a circular singly linked list for that queue where the nodes contain sequence numbers in reverse order . For example, if n=5 it should produce a circular singly linked list starting from 5 and ending at 1 as sequence number. During this process, use the createMonster function as well as enqueu() function to add the monster to the queue.  
-j)  void rearrangeCircle(queue* q): This function takes the reference of a queue and reverse the given circular singly linked list where the first node of the linked list is pointed by the front of the queue 
-k)  void display(queue q): This function displays a given queue 
-l) It is also encouraged that you create functions for phase1, phase2, and other auxiliary functions to simplify your code 
-m)  For phase1 execution, you can avoid using dequeue function, however, you must have to use dequeue function in phase2 execution. 
+a) You must have to use linked list and queue in your implementation.
+
+b) You  must  have  to  use  circular  singly linked  list  for  your  solution  to  get  full  credit. You need  to  declare  appropriate  linked  list  node  structure  to  store  a monster  with  sequence number as the data value.
+
+c) You have to use linked list implementation of queue when applicable.
+
+d) Create a node structure for Monster that has a sequenceNumber and next pointer
+
+e) Create  a  node  structure  for  a  queue  that  has  front  and  back  pointers  to  point  monsters. Also, a good idea would be storing nodeCount, k, and th within the queue structure.
+f) You have to implement and use enqueue, dequeue, peek, isEmpty function for this given scenario.
+
+g) In addition to the other functions of a queue like enqueue, dequeue, your code must have to implement the following functions and use them part of the solution:
+
+h)  monster* createMonster(int sequence): It takes an integer, dynamically allocate a monster structure and returns a monster node
+
+i)  void createReverseCircle(queue *q): It takes the reference of a queue, and creates a circular singly linked list for that queue where the nodes contain sequence numbers in reverse order . For example, if n=5 it should produce a circular singly linked list starting from 5 and ending at 1 as sequence number. During this process, use the createMonster function as well as enqueu() function to add the monster to the queue.
+
+j)  void rearrangeCircle(queue* q): This function takes the reference of a queue and reverse the given circular singly linked list where the first node of the linked list is pointed by the front of the queue
+
+k)  void display(queue q): This function displays a given queue
+
+l) It is also encouraged that you create functions for phase1, phase2, and other auxiliary functions to simplify your code
+
+m)  For phase1 execution, you can avoid using dequeue function, however, you must have to use dequeue function in phase2 execution.
+
 n) You also have to use memory leak detector in your code like assignment 1. 
- 
  
 Your  code  must  compile  in  Mimir  platform.  If  it  does  not  compile  in  Mimir,  we  conclude  that your code does not compile even if it works in your computer. 
 
@@ -146,10 +157,8 @@ Your  code  must  compile  in  Mimir  platform.  If  it  does  not  compile  in 
  
 Steps to check your output AUTOMATICALLY in Mimir or repl.it or other command line based compiler: You can run the following commands to check whether your output is exactly matching with the sample output or not. 
 
-Step1: Copy the sample output into sample_out.txt file and upload it to the mimir/replit (you can make your own sample_out.txt file)
-
-Step2:  compile  and  run  your  code  using  typical  gcc  and  other  commands.  Your  code  should  produce out.txt file.
-
-Step3:  Run the following command to compare your out.txt file with the sample output file ```$diff -i out.txt sample_out.txt```
+#### Step1: Copy the sample output into sample_out.txt file and upload it to the mimir/replit (you can make your own sample_out.txt file)
+#### Step2:  compile  and  run  your  code  using  typical  gcc  and  other  commands.  Your  code  should  produce out.txt file.
+#### Step3:  Run the following command to compare your out.txt file with the sample output file ```$diff -i out.txt sample_out.txt```
 
 The  command  will  not  produce  any  output  if  the  files  contain  exactly  same  data.  Otherwise,  it  will tell you the lines with mismatches. Incase if your code does not match, you can use the following command to see the result in side by side: ```$diff -y out.txt sample_out.txt```
